@@ -1,0 +1,58 @@
+
+@import '../main.sass'
+
+
+// Header
+  
+header
+  background-color: #425B75
+  #logo
+    text-align: center
+    font-size: 1.7em
+    margin: 15px 0
+  nav
+    text-align: center
+    li
+      display: inline-block
+      padding: 10px 15px
+    a
+      display: inline-block
+      font: 600 1.6em $mf, $af
+      color: $mfc
+      transition: $mt
+      &:hover
+        color: #bdc3c7
+    .active
+      background-color: #ecf0f1
+      a
+        color: #333
+    &.list
+      ul
+        float: left
+    &.sign
+      ul
+        float: right
+
+h1
+  color: $mfc
+
+#game-display
+  position: absolute
+  left: 50%
+  top: 40px
+  transform: translate(-50%)
+  background-color: #666
+
+#game-status-bar
+  position: absolute
+  left: 50%
+  top: 0
+  transform: translate(-50%)
+  background-color: #222
+
+.test-click
+  position: absolute
+  width: 40px
+  height: 40px
+  background-color: rgba(255,0,0,.2)
+  z-index: 999
